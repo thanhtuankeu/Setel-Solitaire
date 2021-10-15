@@ -12,11 +12,12 @@ const PointPlayerList = () => {
             let point = element.multiplier * element.cost
             element.playerBoard.forEach(
                 miniElement => {
-                    let calCulatepoint = element.name === miniElement.name ? point : point * (-1)
+                    let calCulatepoint = element.name === miniElement.name ? point * (element.playerBoard.length -1) : point * (-1)
                     filtered[miniElement.name] = filtered[miniElement.name] ? filtered[miniElement.name] + calCulatepoint : calCulatepoint
                 }
             )
         });
+        console.log(filtered);
         setCalculatedPoint(filtered);
     }, [expenses]);
 

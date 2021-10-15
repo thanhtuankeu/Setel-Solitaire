@@ -25,6 +25,7 @@ const CurrentPlayerList = () => {
             type: 'ADD_PLAYER',
             payload: playerPayload,
         });
+        setPlayer('')
     };
 
 
