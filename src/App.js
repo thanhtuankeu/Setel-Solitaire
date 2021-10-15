@@ -15,8 +15,7 @@ const App = () => {
 		<AppProvider>
 			<div className='container'>
 				<h1 className='mt-3'>Champion League Setel 🃏⚽⚽🃏</h1>
-				<div className='row mt-3'>
-				
+				<div className='mt-3'>
 					<PointPlayerList />
 					{/* <div className='col-sm'>
 						<Budget />
