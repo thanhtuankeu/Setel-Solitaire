@@ -8,12 +8,16 @@ import ExpenseList from './components/ExpenseList';
 import AddExpenseForm from './components/AddExpenseForm';
 import RemainingBudget from './components/Remaining';
 import CurrentPlayerList from './components/CurrentPlayerList'
+import PointPlayerList from './components/PointPlayerList'
+
 const App = () => {
 	return (
 		<AppProvider>
 			<div className='container'>
-				<h1 className='mt-3'>Champion League Setel</h1>
+				<h1 className='mt-3'>Champion League Setel 🃏⚽⚽🃏</h1>
 				<div className='row mt-3'>
+				
+					<PointPlayerList />
 					{/* <div className='col-sm'>
 						<Budget />
 					</div>

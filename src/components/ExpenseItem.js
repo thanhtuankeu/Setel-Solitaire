@@ -30,6 +30,7 @@ const ExpenseItem = (props) => {
           ))}
         </em>
       )}
+      {/* {props.timeStamp.toString()} */}
 
       <div>
         <span className="badge badge-primary mr-3">{props.cost}</span>

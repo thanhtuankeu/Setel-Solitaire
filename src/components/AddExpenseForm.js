@@ -7,7 +7,7 @@ const AddExpenseForm = (props) => {
 	const { players } = useContext(AppContext);
 
 	const [name, setName] = useState('');
-	const [point, setPoint] = useState(1);
+	const [point, setPoint] = useState(10000);
 	const [multiplier, setMultiplier] = useState(1);
 
 	const onSubmit = (event) => {
@@ -17,6 +17,8 @@ const AddExpenseForm = (props) => {
 			name,
 			playerBoard: players,
 			cost: parseInt(point),
+			multiplier : multiplier,
+			timeStamp : new Date()
 		};
 
 		dispatch({

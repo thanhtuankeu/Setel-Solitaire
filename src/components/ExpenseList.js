@@ -33,6 +33,8 @@ const ExpenseList = () => {
 						name={expense.name}
 						cost={expense.cost}
 						playerBoard={expense.playerBoard}
+						timeStamp={expense.timeStamp}
+						multiplier={expense.multiplier}
 					/>
 				))}
 			</ul>
