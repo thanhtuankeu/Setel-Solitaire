@@ -44,7 +44,7 @@ const initialState = {
   budget: 2000,
   expenses: [],
   players: [
-    { id: uuidv4(), name: "Toan" },
+    { id: uuidv4(), name: "Toàn" },
     { id: uuidv4(), name: "Dục" },
     { id: uuidv4(), name: "Chí" },
     { id: uuidv4(), name: "Đức" },

@@ -12,12 +12,32 @@ const ExpenseItem = (props) => {
     });
   };
 
+  function convertModifier(modifier) {
+    console.log(modifier)
+    switch (modifier) {
+      case 1:
+        return "Thường";
+      case 2:
+        return "10 điểm";
+      case 3:
+        return "Tam";
+      case 4:
+        return "Đồng Hoa";
+      default:
+        return "Thường";
+    }
+  }
+
   return (
     <li className="list-group-item d-flex justify-content-between align-items-center">
-      {props.name}
+      <div>
+        <span class="badge badge-secondary mr-1">{props.number}</span>
+        {props.name}
+      </div>
+
       <div>
         <span class="badge badge-secondary">
-          {props.multiplier ? props.multiplier : 1}
+          {convertModifier(props.multiplier)}
         </span>
       </div>
       {props.playerBoard && (

@@ -17,7 +17,7 @@ const AddExpenseForm = (props) => {
 			name,
 			playerBoard: players,
 			cost: parseInt(point),
-			multiplier : multiplier,
+			multiplier : parseInt(multiplier),
 			timeStamp : new Date()
 		};
 
@@ -53,8 +53,8 @@ const AddExpenseForm = (props) => {
 					<select className="custom-select mr-sm-2" id="multiplier" value={multiplier} onChange={(event) => {setMultiplier(event.target.value)}}>
 						<option selected value="1">Thường</option>
 						<option value="2">10 điểm</option>
-						<option value="3">3</option>
-						<option value="3">4</option>
+						<option value="3">Tam</option>
+						<option value="4">Đồng Hoa</option>
 					</select>
 				</div>
 			</div>

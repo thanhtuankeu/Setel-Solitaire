@@ -27,7 +27,7 @@ const ExpenseList = () => {
 				onChange={handleChange}
 			/>
 			<ul className='list-group mt-3 mb-3'>
-				{filteredExpenses.map((expense) => (
+				{filteredExpenses.map((expense,index) => (
 					<ExpenseItem
 						id={expense.id}
 						name={expense.name}
@@ -35,6 +35,7 @@ const ExpenseList = () => {
 						playerBoard={expense.playerBoard}
 						timeStamp={expense.timeStamp}
 						multiplier={expense.multiplier}
+						number={index+1}
 					/>
 				))}
 			</ul>
