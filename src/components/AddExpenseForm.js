@@ -51,10 +51,10 @@ const AddExpenseForm = (props) => {
 				<div className='col-sm col-lg-4'>
 					<label className="mr-sm-2" for='multiplier'>Multiplier Point</label>
 					<select className="custom-select mr-sm-2" id="multiplier" value={multiplier} onChange={(event) => {setMultiplier(event.target.value)}}>
-						<option selected value="1">Thường</option>
-						<option value="2">10 điểm</option>
-						<option value="3">Tam</option>
-						<option value="4">Đồng Hoa</option>
+						<option selected value="1">Thường (x1)</option>
+						<option value="2">10 điểm (x2)</option>
+						<option value="3">Tam (x3)</option>
+						<option value="4">Đồng Hoa (x4)</option>
 					</select>
 				</div>
 			</div>
