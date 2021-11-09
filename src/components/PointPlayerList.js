@@ -26,8 +26,22 @@ const PointPlayerList = () => {
 
   return (
     <div className="row">
+      <style type="text/css">
+        {`
+        .col-sm-auto {
+          position: relative;
+          padding-right: 15px;
+          padding-left: 15px;
+          width: auto;
+        }
+        @media (min-width: 576px) .col-sm-auto {
+          flex: 0 0 auto;
+          width: auto;
+      }
+    `}
+      </style>
       {Object.entries(calculatedPoint).map((item) => (
-        <div className="col-sm">
+        <div className="col-sm-auto ">
           <PointPlayerItems name={item[0]} point={item[1]} />
         </div>
       ))}
