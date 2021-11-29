@@ -41,7 +41,7 @@ const ExpenseItem = (props) => {
         </span>
       </div>
       {props.playerBoard && (
-        <em>
+        <em className="pl-1">
           {" "}
           {props.playerBoard.map((player) => (
             <em>
@@ -52,7 +52,7 @@ const ExpenseItem = (props) => {
       )}
       {/* {props.timeStamp.toString()} */}
 
-      <div>
+      <div className="d-flex">
         <span className="badge badge-primary mr-3">{props.cost}</span>
         <TiDelete size="1.5em" onClick={handleDeleteExpense} />
       </div>

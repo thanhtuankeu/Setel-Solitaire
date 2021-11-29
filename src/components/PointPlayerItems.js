@@ -13,7 +13,7 @@ const PointPlayerItems = (props) => {
   };
 
   return (
-    <div>
+    <div className="pl-1">
       <div className= {props.point > 0 ? 'alert alert-primary': 'alert alert-danger'} >
         <h4 className="alert-heading">{props.name}</h4>
         <hr />
