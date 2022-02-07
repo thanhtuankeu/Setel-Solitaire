@@ -46,6 +46,8 @@ const AddExpenseForm = (props) => {
 						<option selected value="10000">10000</option>
 						<option value="20000">20000</option>
 						<option value="30000">30000</option>
+						<option value="40000">40000</option>
+						<option value="50000">50000</option>
 					</select>
 				</div>
 				<div className='col-sm col-lg-4'>
