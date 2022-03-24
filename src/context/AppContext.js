@@ -47,7 +47,7 @@ const initialState = {
     { id: uuidv4(), name: "Toàn" },
     { id: uuidv4(), name: "Dục" },
     { id: uuidv4(), name: "Chí" },
-    { id: uuidv4(), name: "Đức" },
+    { id: uuidv4(), name: "Thọ" },
   ],
 };
 
